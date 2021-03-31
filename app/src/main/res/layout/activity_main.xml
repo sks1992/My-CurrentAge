@@ -4,15 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#64B0ED"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <EditText
+        android:id="@+id/etDOB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Hello_World"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_dob"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvShowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/age_show_here"
+        android:textColor="#811911"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetAge"
+        app:layout_constraintEnd_toEndOf="@+id/etDOB"
+        app:layout_constraintTop_toBottomOf="@+id/etDOB" />
+
+    <Button
+        android:id="@+id/btnGetAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/get_age"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvShowDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My Current Age</string>
     <string name="Hello_World">Hello World!</string>
+    <string name="age_show_here">Age Show Here</string>
+    <string name="get_age">Get Age</string>
+    <string name="enter_your_dob">Enter Your DOB</string>
 </resources>
